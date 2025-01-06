@@ -18,13 +18,30 @@
   
   <div class="bg-black min-h-screen flex flex-col justify-center items-center">
     <GlowBorder
-    :color="['#17d6fc', '#fff830', '#f01127']"
-    class="w-7/12 relative flex flex-col items-center justify-center overflow-hidden rounded-lg bg-transparent md:shadow-xl -inset-y-10"
-    border-width="2"
+    :color="['#17d6fc', '#fff830', '#1bf756', '#f405fc', '#f01127']"
+    class="w-7/12 relative flex flex-col items-center justify-center overflow-hidden rounded-lg bg-transparent md:shadow-xl -inset-y-32"
+    border-width="3"
     duration="20"
     border-radius="10"
     >
-      <div class="p-10">
+      <div class="main p-10 text-white font-mono lg:text-xl flex flex-col items-start gap-3 w-full">
+        <div>
+          <input type="checkbox" value=" " id="one" class="bg-gray-700 rounded-xl">
+          <label for="one" class="text-white"> write technical blogs.</label>
+        </div>
+        
+        
+        <!-- <div>
+          <input type="checkbox" id="two" >
+          <label for="two" class="text-white"> a leetcode a day.</label>
+        </div>
+
+        <div>
+          <input type="checkbox" id="three" >
+          <label for="three" class="text-white"> study investing.</label>
+        </div> -->
+
+
       </div>
     </GlowBorder>
   </div>
