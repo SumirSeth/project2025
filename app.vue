@@ -1,4 +1,5 @@
 <template>
+  <Title>Project 2025.</Title>
   <Body class="bg-black"/>
   <Link rel="icon" :href=favicon />
   <ClientOnly>
