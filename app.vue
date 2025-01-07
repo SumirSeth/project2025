@@ -31,15 +31,15 @@
         </div>
         
         
-        <!-- <div>
+         <div>
           <input type="checkbox" id="two" >
           <label for="two" class="text-white"> a leetcode a day.</label>
         </div>
 
-        <div>
-          <input type="checkbox" id="three" >
-          <label for="three" class="text-white"> study investing.</label>
-        </div> -->
+        <!-- <div> -->
+          <!-- <input type="checkbox" id="three" > -->
+          <!-- <label for="three" class="text-white"> study investing.</label> -->
+        <!-- </div> -->
 
 
       </div>
