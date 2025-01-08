@@ -150,7 +150,7 @@ function showPreview() {
   isVisible.value = true;
   setTimeout(() => {
     hasPopped.value = true;
-  }, 50);
+  }, 1000);
 }
 
 function hidePreview() {
@@ -171,7 +171,7 @@ function handleImageLoad() {
 }
 
 .animate-pop {
-  animation: pop 1000ms ease forwards;
+  animation: pop 1300ms ease forwards;
   will-change: transform;
 }
 

@@ -20,9 +20,9 @@
     <GlowBorder
     :color="['#17d6fc', '#fff830', '#1bf756', '#f405fc', '#f01127']"
     class="w-7/12 relative flex flex-col items-center justify-center overflow-hidden rounded-lg bg-transparent md:shadow-xl -inset-y-32"
-    border-width="3"
+    border-width=3
     duration=25
-    border-radius="10"
+    border-radius=10
     >
       <div class="main p-10 text-white font-mono lg:text-xl flex flex-col items-start gap-3 w-full z-30">
         <div>
@@ -35,10 +35,8 @@
           <input type="checkbox" id="two" >
           <label for="two" class="text-white"> a leetcode a day. </label>
           <!-- <NuxtLink class="text-blue-600 italic" to="https://knowledge-base.surge.sh/notes/leetcode">tackling leetcode.</NuxtLink> -->
-          <LinkPreview url="https://knowledge-base.surge.sh/notes/leetcode" >
-            <span class="text-blue-600 italic opacity-90">
+          <LinkPreview url="https://knowledge-base.surge.sh/notes/leetcode" linkClass="text-blue-600 italic opacity-90">
               (tackling leetcode.)
-            </span>
           </LinkPreview>
         </div>
 
