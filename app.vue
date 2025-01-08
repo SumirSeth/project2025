@@ -27,7 +27,7 @@
       <div class="main p-10 text-white font-mono lg:text-xl flex flex-col items-start gap-3 w-full z-30">
         <div>
           <input type="checkbox" value=" " id="one" class="bg-gray-700 rounded-xl">
-          <label for="one" class="text-white"> write technical blogs.</label>
+          <label for="one" class="text-white"> write 50 technical blogs.</label>
         </div>
         
         
