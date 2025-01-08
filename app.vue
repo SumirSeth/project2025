@@ -42,11 +42,21 @@
           </LinkPreview>
         </div>
 
-        <!-- <div> -->
-          <!-- <input type="checkbox" id="three" > -->
-          <!-- <label for="three" class="text-white"> study investing.</label> -->
-        <!-- </div> -->
+        <div>
+          <input type="checkbox" id="three" >
+          <label for="three" class="text-white"> finish the pile of books i have.</label>
+        </div>
 
+        
+        <div>
+          <input type="checkbox" id="four" >
+          <label for="four" class="text-white"> invest heavily in meditation.</label>
+        </div>
+
+        <div>
+          <input type="checkbox" id="five" >
+          <label for="five" class="text-white"> forming structure around the day and managing sleep hours.</label>
+        </div>
 
       </div>
     </GlowBorder>
