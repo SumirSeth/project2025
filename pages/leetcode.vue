@@ -29,8 +29,8 @@
     :duration=20
     :border-radius=10
     >
-      <div class="main p-10 text-white font-mono lg:text-xl flex flex-col items-start gap-3 w-full z-30">
-        <div>
+      <div class="main p-5 lg:p-10 text-white font-mono lg:text-xl flex flex-col items-start gap-3 w-full z-30">
+        <!-- <div>
           <div class="text-gray-400 opacity-80 font-sans font-thin tracking-tighter italic">
             <p>time: 21:00</p>
             <p>date: 9 jan 25</p>
@@ -38,6 +38,27 @@
           <p>solved problem number <LinkPreview url="https://leetcode.com/problems/palindrome-number/description/" linkClass="text-blue-600 italic opacity-90">
               (9)
           </LinkPreview> </p>
+        </div>
+
+        <div>
+          <div class="text-gray-400 opacity-80 font-sans font-thin tracking-tighter italic">
+            <p>time: 23:45</p>
+            <p>date: 9 jan 25</p>
+          </div>
+          <p>solved problem number <LinkPreview url="https://leetcode.com/problems/palindrome-number/description/" linkClass="text-blue-600 italic opacity-90">
+              (9)
+          </LinkPreview> </p>
+        </div> -->
+
+        <div v-for="date in Object.keys(tracker)" :key="date">
+          <p class="text-gray-400 opacity-80 font-sans font-thin tracking-tighter italic transition ease-out  hover:duration-300 hover:text-gray-100">{{ new Date(date).toDateString() }}</p>
+          <div v-for="problem in tracker[date]" class="mx-3 lg:mx-5 opacity-90">
+            <p>◦ solved <LinkPreview :url="problem.url" linkClass="text-blue-600 italic opacity-90">
+                ({{ problem.pnumber }})
+              </LinkPreview>
+              - {{ problem.title }}
+            </p> 
+          </div>
         </div>
 
 
@@ -50,8 +71,26 @@
 </template>
 
 <script lang="ts" setup>
-const texts = [
-  "focus.","balance.",'love.'];
+const texts = ["focus.","balance.",'love.'];
+
+// date --> array of problems as objects with url, title and time
+const tracker = {
+  [new Date(2025, 0, 9).toISOString()]: [
+    {
+      url: "https://leetcode.com/problems/roman-to-integer/description/",
+      title: "roman to integer",
+      time: "23:45",
+      pnumber: 13,
+    },
+    {
+      url: "https://leetcode.com/problems/palindrome-number/description/",
+      title: "palindrome number",
+      time: "21:00",
+      pnumber: 9,
+    }
+  ],
+}
+
 </script>
 
 <style>
