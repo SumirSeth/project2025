@@ -1,0 +1,59 @@
+<template>
+  <Title>(Project 2025.) - leetcode</Title>
+  <ClientOnly>
+    <BlurReveal
+    :delay="0.15"
+    :duration="0.4"
+    class="p-4 m-4 text-white bg-black justify-center items-center flex flex-col"
+    >
+    <div class="flex">
+      <h2 class="text-3xl text-pretty font-bold font-mono tracking-tight xl:text-6xl/none sm:text-5xl">leetcode👨‍💻</h2>
+      <NuxtLink to="/">
+        <button class="opacity-30 hover:opacity-100">(🏠)</button>
+      </NuxtLink>
+      <NuxtLink to="/blog">
+        <button class="opacity-30 hover:opacity-100">(📃)</button>
+      </NuxtLink>
+    </div>
+    <span class="text-pretty text-xl tracking-tighter xl:text-2xl/none sm:text-xl">
+      <!-- focus, balance and love. -->
+      <MorphingText class="text-white" :texts="texts" :morph-time="8" />
+    </span>
+  </BlurReveal>
+
+  <div class="bg-black min-h-screen flex flex-col justify-center items-center">
+    <GlowBorder
+    :color="['#F5F6F6','#000000']"
+    class="w-7/12 relative flex flex-col items-center justify-center overflow-hidden rounded-lg bg-transparent md:shadow-xl -inset-y-32"
+    :border-width=2
+    :duration=20
+    :border-radius=10
+    >
+      <div class="main p-10 text-white font-mono lg:text-xl flex flex-col items-start gap-3 w-full z-30">
+        <div>
+          <div class="text-gray-400 opacity-80 font-sans font-thin tracking-tighter italic">
+            <p>time: 21:00</p>
+            <p>date: 9 jan 25</p>
+          </div>
+          <p>solved problem number <LinkPreview url="https://leetcode.com/problems/palindrome-number/description/" linkClass="text-blue-600 italic opacity-90">
+              (9)
+          </LinkPreview> </p>
+        </div>
+
+
+      </div>
+    </GlowBorder>
+  </div>
+
+
+  </ClientOnly>
+</template>
+
+<script lang="ts" setup>
+const texts = [
+  "focus.","balance.",'love.'];
+</script>
+
+<style>
+
+</style>

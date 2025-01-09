@@ -11,6 +11,9 @@
       <NuxtLink to="/">
         <button class="opacity-30 hover:opacity-100">(🏠)</button>
       </NuxtLink>
+      <NuxtLink to="/leetcode">
+        <button class="opacity-30 hover:opacity-100">(👨‍💻)</button>
+      </NuxtLink>
     </div>
     <span class="text-pretty text-xl tracking-tighter xl:text-2xl/none sm:text-xl">
       <!-- focus, balance and love. -->

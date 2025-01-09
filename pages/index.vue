@@ -10,6 +10,9 @@
       <NuxtLink to="/blog">
         <button class="opacity-30 hover:opacity-100">(📃)</button>
       </NuxtLink>
+      <NuxtLink to="/leetcode">
+        <button class="opacity-30 hover:opacity-100">(👨‍💻)</button>
+      </NuxtLink>
     </div>
     <span class="text-pretty text-xl tracking-tighter xl:text-2xl/none sm:text-xl">
       <!-- focus, balance and love. -->
@@ -23,9 +26,9 @@
     <GlowBorder
     :color="['#17d6fc', '#fff830', '#1bf756', '#f405fc', '#f01127']"
     class="w-7/12 relative flex flex-col items-center justify-center overflow-hidden rounded-lg bg-transparent md:shadow-xl -inset-y-32"
-    border-width=3
-    duration=25
-    border-radius=10
+    :border-width=3
+    :duration=25
+    :border-radius=10
     >
       <div class="main p-10 text-white font-mono lg:text-xl flex flex-col items-start gap-3 w-full z-30">
         <div>

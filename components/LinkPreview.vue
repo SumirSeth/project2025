@@ -23,7 +23,7 @@
         :class="[popClass, { 'transform-gpu': !props.isStatic }]"
       >
         <div
-          class="block rounded-xl border-2 border-transparent bg-white p-1 shadow-lg dark:bg-gray-900"
+          class="block rounded-xl border-1 border-transparent  p-1 shadow-lg bg-gray-400"
         >
           <img
             :src="previewSrc"
@@ -89,7 +89,7 @@ const previewSrc = computed(() => {
     screenshot: "true",
     meta: "false",
     embed: "screenshot.url",
-    colorScheme: "light",
+    colorScheme: "dark",
     "viewport.isMobile": "true",
     "viewport.deviceScaleFactor": "1",
     "viewport.width": String(props.width * 3),
