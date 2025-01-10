@@ -44,7 +44,7 @@
           <LinkPreview url="https://knowledge-base.surge.sh/notes/leetcode" linkClass="text-blue-600 italic opacity-90">
             (tackling leetcode.)
           </LinkPreview>
-          <LinkPreview url="/leetcode" linkClass="text-red-600 italic opacity-90">
+          <LinkPreview url="https://project2025-alpha.vercel.app/leetcode" linkClass="text-red-600 italic opacity-90">
               (progress.)
           </LinkPreview>
         </div>
