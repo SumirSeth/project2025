@@ -42,7 +42,10 @@
           <label for="two" class="text-white"> a leetcode a day. </label>
           <!-- <NuxtLink class="text-blue-600 italic" to="https://knowledge-base.surge.sh/notes/leetcode">tackling leetcode.</NuxtLink> -->
           <LinkPreview url="https://knowledge-base.surge.sh/notes/leetcode" linkClass="text-blue-600 italic opacity-90">
-              (tackling leetcode.)
+            (tackling leetcode.)
+          </LinkPreview>
+          <LinkPreview url="/leetcode" linkClass="text-red-600 italic opacity-90">
+              (progress.)
           </LinkPreview>
         </div>
 
