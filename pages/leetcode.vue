@@ -56,7 +56,7 @@
             <p>◦ solved <LinkPreview :url="problem.url" linkClass="text-blue-600 italic opacity-90">
                 ({{ problem.pnumber }})
               </LinkPreview>
-              - {{ problem.title }}
+              - {{ problem.title }} <sub :class="['font-thin','italic',problem.difficulty=='easy'?'text-green-500':problem.difficulty=='medium'?'text-yellow-500':'text-red-500', '-inset-x-2', 'opacity-80 font-sans']">({{ problem.difficulty }})</sub>
             </p> 
           </div>
         </div>
@@ -74,19 +74,48 @@
 const texts = ["focus.","balance.",'love.'];
 
 // date --> array of problems as objects with url, title and time
-const tracker = {
+const tracker = <{
+    [x: string]: {
+        url: string;
+        title: string;
+        time: string;
+        pnumber: number;
+        difficulty: 'easy' | 'medium' | 'hard';
+    }[];
+}>{
+
+  [new Date(2025, 0, 10).toISOString()]: [
+    {
+      url: "https://leetcode.com/problems/string-to-integer-atoi/description/",
+      title: "string to integer atoi",
+      time: '22:50',
+      pnumber: 8,
+      difficulty: 'medium'
+    },
+    {
+      url:"https://leetcode.com/problems/reverse-integer/description/",
+      title: "reverse integer",
+      time: '21:30',
+      pnumber: 7,
+      difficulty: 'medium'
+    }
+  ],
+
+
   [new Date(2025, 0, 9).toISOString()]: [
     {
       url: "https://leetcode.com/problems/roman-to-integer/description/",
       title: "roman to integer",
       time: "23:45",
       pnumber: 13,
+      difficulty: "easy"
     },
     {
       url: "https://leetcode.com/problems/palindrome-number/description/",
       title: "palindrome number",
       time: "21:00",
       pnumber: 9,
+      difficulty: "easy",
     }
   ],
 }
