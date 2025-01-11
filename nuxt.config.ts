@@ -10,7 +10,7 @@ export default defineNuxtConfig({
   ],
   runtimeConfig: {
     public: {
-      googleApiKey: process.env.GOOGLE_API_KEY,
+      googleApiKey: process.env.NUXT_PUBLIC_GOOGLE_API_KEY,
       motion: {
         directives: {
           'pop-bottom' : {
