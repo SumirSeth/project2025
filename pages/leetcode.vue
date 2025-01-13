@@ -84,6 +84,16 @@ const tracker = <{
     }[];
 }>{
 
+  [new Date(2025, 0, 13).toISOString()]: [
+    {
+      url: "https://leetcode.com/problems/valid-parentheses/description/",
+      title: "valid parentheses",
+      time: "23:00",
+      pnumber: 20,
+      difficulty: "easy"
+    }
+  ],
+
   [new Date(2025, 0, 11).toISOString()]: [
     {
       url: "https://leetcode.com/problems/longest-common-prefix/description/",
