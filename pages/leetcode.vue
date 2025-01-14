@@ -84,6 +84,16 @@ const tracker = <{
     }[];
 }>{
 
+  [new Date(2025, 0, 14).toISOString()]: [
+    {
+      url: "https://leetcode.com/problems/zigzag-conversion/description/",
+      title: "zigzag conversion",
+      time: "23:00",
+      pnumber: 6,
+      difficulty: "easy"
+    }
+  ],
+
   [new Date(2025, 0, 13).toISOString()]: [
     {
       url: "https://leetcode.com/problems/valid-parentheses/description/",
