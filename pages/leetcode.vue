@@ -84,6 +84,16 @@ const tracker = <{
     }[];
 }>{
 
+  [new Date(2025, 0, 16).toISOString()]: [
+    {
+      url: "https://leetcode.com/problems/add-two-numbers/description/",
+      title: "add two numbers",
+      time: "23:15",
+      pnumber: 2,
+      difficulty: "easy"
+    }
+  ],
+
   [new Date(2025, 0, 15).toISOString()]: [
     {
       url: "https://leetcode.com/problems/merge-two-sorted-lists/description/",
