@@ -84,6 +84,16 @@ const tracker = <{
     }[];
 }>{
 
+  [new Date(2025, 0, 21).toISOString()]: [
+    {
+      url: "https://leetcode.com/problems/median-of-two-sorted-arrays/description/",
+      titleL: "median of two sorted arrays",
+      time: "23:15",
+      pnumber: 4,
+      difficulty: "hard"
+    }
+  ],
+
   [new Date(2025, 0, 16).toISOString()]: [
     {
       url: "https://leetcode.com/problems/add-two-numbers/description/",
